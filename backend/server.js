@@ -1,5 +1,5 @@
 const express = require("express"); //import Express
-const notes = require("./data/notes");
+const notes = require("../backend/data/notes");
 const dotenv = require("dotenv");
 
 const app = express(); //Create server using Express
