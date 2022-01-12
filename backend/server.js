@@ -1,9 +1,11 @@
 const express = require("express"); //import Express
 const notes = require("../backend/data/notes");
 const dotenv = require("dotenv");
+const connectDB = require("./config/db");
 
 const app = express(); //Create server using Express
 dotenv.config();
+connectDB();
 
 app.get("/", (req, res) => {
   //Gets the following text from the response and sends it to the browser.
